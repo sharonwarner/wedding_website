@@ -1,0 +1,35 @@
+<%= render 'shared/icons' %>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">
+      	<p>Sharon and Eric's Wedding</p> 
+      	<p>
+      	  October 24th, 2015
+      	  <svg class="category-icon health-icon" height="25px" width="25px">
+            <use xlink:href="#leaf"/>
+          </svg>
+        </p>
+      </a> 
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="<%= yield(:home) %>"><%= link_to "Home", root_path %></li>
+        <li class="<%= yield(:about) %>"><%= link_to "About Us", about_path %></li>
+        <li class="<%= yield(:weddingparty) %>"><%= link_to "Wedding Party", weddingparty_path %></li>
+        <li class="<%= yield(:eventdetails) %>"><%= link_to "Event Details", eventdetails_path %></li>
+        <li class="<%= yield(:rsvp) %>"><%= link_to "RSVP", rsvp_path %></li>
+        <li class="<%= yield(:registry) %>"><%= link_to "Registry", registry_path %></li>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
