@@ -7,60 +7,10 @@
 	margin-top: -18px;
 	fill: currentColor;
 }
-@media (max-width: 768px){
+@media (max-width: 400px){
   .navbar-brand {
     font-size: 20px;
   }
-}
-@media (max-width: 990px) {
-    .navbar-header {
-        float: none;
-    }
-    .navbar-toggle {
-        display: block;
-    }
-    .navbar-collapse {
-        border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-    }
-    .navbar-collapse.collapse {
-        display: none!important;
-    }
-    .navbar-nav {
-        float: none!important;
-        margin: 7.5px -15px;
-    }
-    .navbar-nav>li {
-        float: none;
-    }
-    .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-}
-.carousel .item .mycarousel {
-    margin-top: 10px;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-bottom: 0px;
-    width: 50%; /*slider width*/
-    max-height: 400px; /*slider height*/
-}
-.carousel .item img {
-    margin-top: 10px;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-bottom: 0px;
-    width: 50%; /*img width*/
-    max-height: 400px; /*img height*/
-}
-.carousel-control.left {
-    background-image: none;
-    margin-left: 10%;
-}
-.carousel-control.right {
-    background-image: none;
-    margin-right: 10%;
 }
 .cursive {
     font-family: 'La Belle Aurore', cursive;   
@@ -76,9 +26,6 @@
   margin-bottom: 20px;
   text-align: center;
 }
-.featurette-heading {
-    
-}
 .myhome {
     padding-left: 10%;
     padding-right: 5%;
@@ -90,4 +37,39 @@
 .center {
     margin-left: 10%;
     margin-right: auto; 
+}
+body {
+    background-image: image-url("pattern-brcm.png")
+}
+.home {
+    text-align: center;
+}
+.welcome {
+    font-family: 'Tulpen One', cursive;
+    text-align: center;
+    font-size: 75px; 
+    font-style: bold;
+}
+.names {
+    font-family: 'Tulpen One', cursive;
+    text-align: center;
+    font-size: 50px; 
+    margin-top: -40px;
+}
+hr.style-seven {
+    height: 30px;
+    border-style: solid;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+hr.style-seven:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
 }
