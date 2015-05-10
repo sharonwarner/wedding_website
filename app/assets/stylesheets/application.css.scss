@@ -320,9 +320,9 @@ $grid-columns:              12 !default;
 $grid-gutter-width:         30px !default;
 // Navbar collapse
 //** Point at which the navbar becomes uncollapsed.
-$grid-float-breakpoint:     $screen-sm-min !default;
+$grid-float-breakpoint:     1000px !default;
 //** Point at which the navbar begins collapsing.
-$grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
+$grid-float-breakpoint-max: 1000px !default;
 
 
 //== Container sizes
@@ -859,6 +859,8 @@ $dl-horizontal-offset:        $component-offset-horizontal !default;
 $hr-border:                   #983B36 !default;
 
 @import url(http://fonts.googleapis.com/css?family=La+Belle+Aurore);
+@import url(http://fonts.googleapis.com/css?family=Tulpen+One); 
+@import url(http://fonts.googleapis.com/css?family=Fascinate+Inline);
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
