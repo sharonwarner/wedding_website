@@ -55,3 +55,23 @@ body {
     text-align: center;
     font-size: 50px; 
 }
+.jumbotron {
+    margin-bottom: 0px;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 600px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-image: image-url("dark.png")
+}
+.footer a {
+    color: #983B36;
+}

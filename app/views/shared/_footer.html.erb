@@ -1,0 +1,31 @@
+<footer class="footer jumbotron">
+  <div class="container">
+  	<div class="col-md-4">
+    	<a class="twitter-timeline" href="https://twitter.com/hashtag/warchesterwedding" data-widget-id="598298048981299202">#warchesterwedding Tweets</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	</div>
+	<div class="col-md-4 home">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Contact Us</h3>
+        </div>
+        <div class="panel-body">
+          Please feel free to email Eric (eric.chesterton@gmail.com) or Sharon (sharon.warner56@gmail.com) with any questions or concerns!
+        </div>
+      </div>
+	</div>	
+	<div class="col-md-4 home">
+		<div class="list-group">
+		<ul class="list-unstyled">
+        <li class="list-group-item <%= yield(:home) %>"><%= link_to "A Quite Nice Wedding", root_path %></li>
+        <li class="list-group-item <%= yield(:about) %>"><%= link_to "About Us", about_path %></li>
+        <li class="list-group-item <%= yield(:weddingparty) %>"><%= link_to "Wedding Party", weddingparty_path %></li>
+        <li class="list-group-item <%= yield(:eventdetails) %>"><%= link_to "Event Details", eventdetails_path %></li>
+        <li class="list-group-item <%= yield(:rsvp) %>"><%= link_to "RSVP", rsvp_path %></li>
+        <li class="list-group-item <%= yield(:registry) %>"><%= link_to "Registry", registry_path %></li>
+        </li>
+      </ul>
+  	  </div>
+	</div>
+  </div>
+</footer>
