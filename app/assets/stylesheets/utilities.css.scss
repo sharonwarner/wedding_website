@@ -62,16 +62,52 @@ html {
   position: relative;
   min-height: 100%;
 }
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 600px;
-}
+
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-image: image-url("dark.png")
+  background-image: image-url("dark.png");
 }
 .footer a {
     color: #983B36;
+}
+
+@media screen and (min-width: 992px){
+    body {
+        /* Margin bottom by footer height */
+        margin-bottom: 600px;
+    }
+    .footer {
+        height: 500px;
+    }
+}
+@media screen and (max-width: 991px){
+    body {
+        /* Margin bottom by footer height */
+        margin-bottom: 1400px;
+    }
+    .footer {
+        height: 1400px;
+    }
+}
+.list-group-item {
+    height: 66.7px;
+    line-height: 50px;
+}
+.twitter-timeline {
+    margin: 0 auto;
+}
+.end {
+    position: relative;
+    height: 350px;
+}
+.end span {
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    margin-left:-25%;
+}
+.copy {
+    color: #fcebdb;
 }
